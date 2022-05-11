@@ -1,0 +1,333 @@
+body
+{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(202, 172, 108, 0.521);
+}
+
+
+.contenu
+{
+    position: relative;
+    margin: auto;
+    width: 90%;
+    height: 400px;
+    background-image: url('MOIET.jpg') ;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+}
+
+
+
+.profil
+{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    bottom: 20px;
+    left: 25px;
+}
+
+.profil img
+{
+    width: 150px;
+    height: 150px;
+    border: 3px solid gray;
+}
+
+.navbar
+{
+    text-align: center;
+    width: 90%;
+    background:rgba(156, 40, 40, 0.61);
+    margin: auto;
+}
+.GUY h1 span{
+    color: red;
+}
+.GUY h3 span{
+    color: red;
+ }
+.navbar ul
+{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    position: relative;
+}
+
+.navbar ul li a 
+{
+    display: block;
+    padding: 25px;
+    color: whitesmoke;
+    text-decoration: none;
+    width: 100px;
+}
+
+.navbar ul:after
+{
+    content:"" ;
+    clear: both;
+    display: block;
+}
+
+.navbar ul li
+{
+    float: left;
+    list-style-type: none;
+    display: block;
+}
+
+.navbar ul ul
+{
+    display: none;
+}
+
+.navbar ul li:hover > ul
+{
+    display: block;
+}
+
+.navbar ul li:hover a
+{
+    background:rgba(156, 40, 40, 0.61);
+    transition: 0,9s;
+}
+
+.navbar ul li:hover a
+{
+    color: white;
+}
+
+.navbar ul ul 
+{
+    background: black;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top:100%
+}
+
+.navbar ul ul li 
+{
+    float: none;
+    position: relative;
+}
+
+.navbar ul ul li a
+{
+    padding: 25px;
+    color: white;
+    width: 300px;
+    text-align: left;
+}
+
+.navbar ul ul li a:hover
+{
+    background: #944f4f;
+    color: black;
+    transition: 0.9s;
+}
+
+
+.course{
+    width: 80%;
+    margin:auto;
+    text-align: center;
+    padding-top:100px;
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+p{
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.row{
+    margin-top: 5%;
+    display:flex;
+    justify-content: space-between;
+}
+.course-col{
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius:10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing:border-box;
+    transition: 0.5s;
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin:10px 0;
+}
+.course-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+@media(max-width:700px){
+    .row{
+        flex-direction: column;
+    }
+}
+
+
+/*------campus------*/
+.campus{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.campus-col{
+    flex-basis:32%;
+    border-radius:10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.campus-col img{
+    width: 100%;
+    display: block;
+}
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+    transition: 0,5s;
+}
+.layer:hover{
+    background: rgba(226,0,0,0.7);
+}
+.layer h3{
+    width:100%;
+    font-weight:500;
+    color:#fff;
+    font-size:26px;
+    bottom:0;
+    left:50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity:0;
+    transition: 0.5s;
+}
+.layer:hover h3{
+    bottom:49%;
+    opacity:1;
+}
+/*LES METIERSS*/
+
+
+.guy{
+    width:21%;
+    height: 500px;
+    border:solid black;
+    background-color: #ffcb60;
+    margin-top: 59px;
+    
+
+
+  
+}
+.gauche{
+    border:solid black;
+    width:100%;
+    height:120px;
+    font-size:46px;
+    
+}
+.milie{
+   border:solid black;
+   width:100%;
+   height:350px;
+
+   
+}
+.baze{
+   border:solid black;
+   width:16%;
+   height:210px;
+   background-image: url("STAT.jpg");
+   position: relative;
+  
+
+}
+.po{
+    color: red;
+    font-size:45px;
+}
+.mafem{
+   width:80%;
+   height:500px;
+   position: relative;
+   float: right;
+
+}
+/*vague 2*/
+.base{
+   border:solid black;
+   width:19%;
+   height:210px;
+   background-image: url("actuaire.jpe");
+   position: relative;
+  
+
+}
+.poto{
+    color: red;
+    font-size:45px;
+}
+.femme{
+   width:80%;
+   height:500px;
+   position: relative;
+   float: right;
+
+}
+.amour{
+   border:solid black;
+   width:100%;
+   height:350px;
+       
+   }
+
+
+footer
+{
+    background-color: #1a1a1a;
+    padding: 25px 100px;
+    color: #ddd;
+}
+footer p
+{
+    margin-top: 15px;
+}
+footer .colonne p a
+{
+    text-decoration: none;
+    color: #ddd
+}
+footer .espacer
+{
+    margin-top: 30px;
+}
+footer .colonnes
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+ }
+
+/* FIN DU PIED DE PAGE */
